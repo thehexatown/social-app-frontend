@@ -4,11 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
-
- 
+    "build": " npm i && npm run build",
+    "start": "next start -p $PORT"
   },
   "engines": {"node":"16.13.1","npm":"8.1.2"},
   "dependencies": {
