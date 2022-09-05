@@ -6,7 +6,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "npm run build"
+
+ 
   },
   "engines": {"node":"16.13.1","npm":"8.1.2"},
   "dependencies": {
