@@ -1,0 +1,109 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .profileHolederName {
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+    font-family: "SF UI Text", sans-serif;
+  }
+  .navIconsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+
+    .bellIcon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      background-color: #f3f3f3;
+      cursor: pointer;
+    }
+
+    .settingIcon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      background-color: #f3f3f3;
+      cursor: pointer;
+    }
+    .profileDropdown {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 2px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      .profileImageIcon {
+      }
+      .bellBoxRight:hover {
+      }
+      .downArrow {
+        width: 15px;
+        height: 10px;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .navIconsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .bellIcon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      background-color: #f3f3f3;
+    }
+    .settingIcon {
+      display: none;
+    }
+    .profileDropdown {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 10px;
+      .profileImageIcon {
+        width: 30px;
+        height: 30px;
+      }
+      .select {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .downArrow {
+        width: 10px;
+        height: 7px;
+      }
+    }
+  }
+}

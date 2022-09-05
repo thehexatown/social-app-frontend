@@ -1,0 +1,13 @@
+.navParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  .mobileSearch {
+    flex: 3;
+  }
+  .mobileContent {
+    flex: 1;
+  }
+}

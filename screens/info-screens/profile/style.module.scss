@@ -1,0 +1,71 @@
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  .profileBox {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    border-radius: 25px;
+    column-gap: 15px;
+
+    .profileBoxImage {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+    }
+  }
+  .profileNameBox {
+    margin-left: 10px;
+    margin-right: 10px;
+    .heading {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 1px;
+      font-family: "SF UI Text", sans-serif;
+    }
+    .viewProfileButton {
+      width: 121px;
+      height: 27px;
+      color: #fff;
+      background-color: #0078d8;
+      border: none;
+      border-radius: 30px;
+      padding: 5px;
+      margin-top: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: "SF UI Text", sans-serif;
+    }
+    .profileButton:hover {
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .profileContainer {
+    .profileNameBox {
+      margin-left: 0px;
+      margin-right: 0px;
+      .heading {
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 1px;
+        font-family: "SF UI Text", sans-serif;
+      }
+      .viewProfileButton {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}

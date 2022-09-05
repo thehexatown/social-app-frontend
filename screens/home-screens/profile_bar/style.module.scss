@@ -1,0 +1,131 @@
+.menuBarContainerBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .menuBoxContainerPlus {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .menuBoxContainerPlus:hover {
+    cursor: pointer;
+  }
+  .scrollParent {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+    .menuBoxContainerImages {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      margin-right: 10px;
+      .menuBoxContainerImage {
+        width: 52px;
+        height: 52px;
+        border: 2px solid rgba(0, 100, 180, 1);
+        border-radius: 50%;
+        margin-left: 50px;
+        margin-right: 60px;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+      }
+    }
+  }
+  .scrollParent::-webkit-scrollbar {
+    display: none;
+  }
+  .menuBoxContainerImages:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .menuBarContainerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .menuBoxContainerPlus {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 50px;
+    }
+    .menuBoxContainerImages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 50px;
+      border-width: 2px;
+      border-color: blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .menuBarContainerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    overflow-y: hidden;
+
+    .menuBoxContainerPlus {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 50px;
+    }
+    .menuBoxContainerImages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 50px;
+      border-width: 2px;
+      border-color: blue;
+    }
+  }
+
+  .menuBarContainerBottom {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .menuBarContainerBottom::-webkit-scrollbar {
+    display: none;
+  }
+}

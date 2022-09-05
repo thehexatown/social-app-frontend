@@ -1,0 +1,47 @@
+.collectionHeadingWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 0.5px solid #e1e1e1;
+
+  .heading {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 15px;
+    font-family: "SF UI Text", sans-serif;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .horizontalDots {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .seeAll {
+    color: black;
+    opacity: 50%;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: "SF UI Text", sans-serif;
+  }
+}

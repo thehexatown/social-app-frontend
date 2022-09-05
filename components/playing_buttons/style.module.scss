@@ -1,0 +1,78 @@
+.trendingButton {
+  &[data-index="0"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    width: 49%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #324768 1.8%, #164a94 98.4%);
+    cursor: pointer;
+    .trendingColor {
+      color: #fff;
+      margin-left: 5px;
+      font-family: "SF UI Text", sans-serif;
+    }
+    .trendingIcon {
+      margin-right: 5px;
+    }
+  }
+  &[data-index="1"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    width: 49%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #d01527 0%, #e20071 100%);
+    cursor: pointer;
+    .trendingColor {
+      color: #fff;
+      margin-left: 5px;
+      font-family: "SF UI Text", sans-serif;
+    }
+    .trendingIcon {
+      margin-right: 5px;
+    }
+  }
+  &[data-index="2"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    width: 49%;
+    border-radius: 10px;
+    background: linear-gradient(264.34deg, #009449 1.87%, #006554 95.49%);
+    cursor: pointer;
+    .trendingColor {
+      color: #fff;
+      margin-left: 5px;
+      font-family: "SF UI Text", sans-serif;
+    }
+    .trendingIcon {
+      margin-right: 5px;
+    }
+  }
+  &[data-index="3"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    width: 49%;
+    border-radius: 10px;
+    background: linear-gradient(93.43deg, #ffc46d 2.83%, #ff7700 99.22%);
+    cursor: pointer;
+    .trendingColor {
+      color: #fff;
+      margin-left: 5px;
+      font-family: "SF UI Text", sans-serif;
+    }
+    .trendingIcon {
+      margin-right: 5px;
+    }
+  }
+}

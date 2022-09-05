@@ -1,0 +1,89 @@
+.trendingGameParent {
+  margin-top: 40px;
+  .gamingcontainerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .trendingGameParent {
+    .gamingcontainerTop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      .trendingButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        width: 45%;
+        background-color: #324768;
+        border-radius: 5px;
+
+        .trendingColor {
+          color: #fff;
+        }
+      }
+      .musicButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d01527;
+        padding: 2%;
+        width: 45%;
+        border-radius: 5px;
+
+        .musicColor {
+          color: #fff;
+        }
+      }
+    }
+    .gamingcontainerBottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .gamesButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #009449;
+        padding: 2%;
+        width: 45%;
+        border-radius: 5px;
+
+        .gameColor {
+          color: #fff;
+        }
+      }
+      .sportsButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffc46d;
+        padding: 2%;
+        width: 45%;
+        border-radius: 5px;
+
+        .sportColor {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

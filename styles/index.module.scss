@@ -1,0 +1,154 @@
+.parent {
+  background-color: #fafafa;
+  .webView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fafafa;
+
+    .first_col {
+      width: 330px;
+      padding: 1%;
+      background-color: #fafafa;
+    }
+
+    // second column styles
+    .second_col {
+      width: 600px;
+      background-color: #f7f7f9;
+
+      .innerSecondCol {
+        padding: 3%;
+      }
+    }
+
+    // third column styles
+    .third_col {
+      width: 330px;
+      padding: 1%;
+      background-color: #fafafa;
+    }
+  }
+  .mobileView {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .parent {
+    .webView {
+      .first_col {
+        width: 300px;
+        padding: 10px;
+        background-color: #fafafa;
+
+        .innerFirstCol {
+          margin: 0px;
+        }
+      }
+      .second_col {
+        flex: 1;
+        width: 650px;
+        background-color: #f7f7f9;
+      }
+      .third_col {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .parent {
+    .webView {
+      display: flex;
+      flex-direction: row;
+
+      .first_col {
+        width: 300px;
+        padding: 1%;
+        background-color: #fafafa;
+        .innerFirstCol {
+          margin: 0px;
+        }
+      }
+      .second_col {
+        width: 625px;
+        background-color: #f7f7f9;
+        // padding: 0px 20px 0 20px;
+      }
+      .third_col {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .parent {
+    .webView {
+      display: flex;
+      flex-direction: row;
+
+      .first_col {
+        width: 270px;
+        padding: 10px 20px 0 20px;
+        background-color: #fafafa;
+        .innerFirstCol {
+        }
+      }
+      .second_col {
+        width: 550px;
+        background-color: #f7f7f9;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .parent {
+    .webView {
+      display: none;
+    }
+    .mobileView {
+      display: flex;
+      flex-direction: column;
+      padding: 1%;
+      background-color: #f7f7f9;
+
+      .mobileContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .mobileContentAlign {
+          max-width: 540px;
+        }
+      }
+      .second_col {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .parent {
+    .webView {
+      display: none;
+    }
+    .mobileView {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      background-color: #f7f7f9;
+      .mobileContentAlign {
+        width: 100%;
+      }
+
+      .second_col {
+        width: 100%;
+      }
+    }
+  }
+}

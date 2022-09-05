@@ -1,0 +1,46 @@
+.searchBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .hexonImage {
+    margin-right: 20px;
+  }
+
+  .inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #f7f4f4;
+
+    .input {
+      border: none;
+      height: 30px;
+      outline: none;
+      &::placeholder {
+        padding-left: 5px;
+        color: #000000;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .searchBoxWrapper {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .searchBoxWrapper {
+    .hexonImage {
+      display: none;
+    }
+  }
+}
